@@ -96,4 +96,13 @@ main .bannerButton {
   text-align: center;
   font-weight: 700;
 }
+
+.bannerDropcap {
+  color: #ea6c36;
+  font-size: 76px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
 /*# sourceMappingURL=styles.css.map */
