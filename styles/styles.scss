@@ -67,7 +67,7 @@ main {
 
     .bannerImage {
         width: 100%;
-        height: 80vh;
+        height: 90vh;
     }
 
     h1 {
@@ -111,7 +111,6 @@ main {
         font-size: 18px;
         font-weight: 700;
     }
-
 }
 
 .bannerSubtext {
@@ -125,4 +124,115 @@ main {
     font-size: 76px;
     line-height: 60px;
     margin-right: -10px;
+}
+
+.bannerPosttext {
+    font-family: $OpenSans;
+    font-weight: $light;
+    text-align: center;
+}
+
+.homeSection1 {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .homeImage1 {
+        height: 60vh;
+        mask-image: linear-gradient(to left, transparent 10%, black);
+    }
+
+    p {
+        width: 50vw;
+        font-family: $OpenSans;
+        font-weight: $light;
+        position: absolute;
+        left: 40%;
+    }
+
+    .homeSectionButton1 {
+        background: #6EB2CC;
+        border-radius: 30px;
+        border: none;
+        text-align: center;
+        padding: 15px 60px;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 67.5%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.homeSection2 {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .homeImage2 {
+        margin-right: 0;
+        height: 60vh;
+        mask-image: linear-gradient(to left, transparent 5%, black);
+    }
+
+    p {
+        width: 50vw;
+        font-family: $OpenSans;
+        font-weight: $light;
+        position: absolute;
+        left: 40%;
+    }
+
+    .homeSectionButton2 {
+        background: #6EB2CC;
+        border-radius: 30px;
+        border: none;
+        text-align: center;
+        padding: 15px 60px;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 67.5%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.homeImage3 {
+    height: 60vh;
+    width: 100%;
+}
+
+footer {
+    display: inline-grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: $darkteal;
+    color: #e7e7e7;
+    margin-top: 5%;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: $OpenSans;
+    font-weight: $light;
+
+    .footerFirstSection {
+        
+        a {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $grey;
+    }
 }

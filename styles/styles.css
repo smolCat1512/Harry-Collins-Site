@@ -47,7 +47,7 @@ h1 {
 
 main .bannerImage {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 
 main h1 {
@@ -103,5 +103,126 @@ main .bannerButton {
   font-size: 76px;
   line-height: 60px;
   margin-right: -10px;
+}
+
+.bannerPosttext {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.homeSection1 {
+  margin-top: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.homeSection1 .homeImage1 {
+  height: 60vh;
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(10%, transparent), to(black));
+  -webkit-mask-image: linear-gradient(to left, transparent 10%, black);
+          mask-image: -webkit-gradient(linear, right top, left top, color-stop(10%, transparent), to(black));
+          mask-image: linear-gradient(to left, transparent 10%, black);
+}
+
+.homeSection1 p {
+  width: 50vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  left: 40%;
+}
+
+.homeSection1 .homeSectionButton1 {
+  background: #6EB2CC;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  padding: 15px 60px;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 67.5%;
+}
+
+.homeSection1 a {
+  text-decoration: none;
+}
+
+.homeSection2 {
+  margin-top: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.homeSection2 .homeImage2 {
+  margin-right: 0;
+  height: 60vh;
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(5%, transparent), to(black));
+  -webkit-mask-image: linear-gradient(to left, transparent 5%, black);
+          mask-image: -webkit-gradient(linear, right top, left top, color-stop(5%, transparent), to(black));
+          mask-image: linear-gradient(to left, transparent 5%, black);
+}
+
+.homeSection2 p {
+  width: 50vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  left: 40%;
+}
+
+.homeSection2 .homeSectionButton2 {
+  background: #6EB2CC;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  padding: 15px 60px;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 67.5%;
+}
+
+.homeSection2 a {
+  text-decoration: none;
+}
+
+.homeImage3 {
+  height: 60vh;
+  width: 100%;
+}
+
+footer {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 2fr 2fr 1fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #2f6a87;
+  color: #e7e7e7;
+  margin-top: 5%;
+  margin-left: -5.5%;
+  margin-right: -5.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+footer .footerFirstSection a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #e7e7e7;
 }
 /*# sourceMappingURL=styles.css.map */
