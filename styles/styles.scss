@@ -18,6 +18,10 @@ sans-serif;
 $light: 300;
 $heavy:700;
 
+* {
+    border: box;
+}
+
 // Body Styles
 body {
     background-color: black;
@@ -40,6 +44,7 @@ header {
 
     nav {
         padding-left: 325px;
+
         :hover {
             color: $grey;
         }
@@ -151,7 +156,7 @@ main {
     line-height: 0.55;
     margin-top: 18px;
     margin-right: 6px;
-  }
+}
 
 .homeSection1 {
     margin-top: 10vh;
@@ -226,10 +231,57 @@ main {
     }
 }
 
-.homeImage3 {
-    height: 60vh;
-    width: 100%;
+.newsletter {
+    display: grid;
+
+    .newsletterImage {
+        height: 70vh;
+        width: 100%;
+        mask-image: linear-gradient(to right, transparent 10%, $black);
+
+    }
+
+    span {
+        color: $lightteal;
+    }
+
+    p {
+        font-size: 36px;
+        font-family: $OpenSans;
+        font-weight: $light;
+        position: absolute;
+        margin-top: 10%;
+    }
+
+    form {
+        font-size: 36px;
+        font-family: $OpenSans;
+        font-weight: $light;
+        position: absolute;
+        margin-top: 20%;
+
+        input {
+            font-size: 18px;
+        }
+
+
+    }
+
+    button {
+        background: #6EB2CC;
+        border-radius: 30px;
+        border: none;
+        text-align: center;
+        padding: 15px 60px;
+        font-size: 18px;
+        position: absolute;
+
+        margin-top: 25%;
+    }
 }
+
+
+// Footer Styling section
 
 footer {
     display: inline-grid;
@@ -250,7 +302,7 @@ footer {
     }
 
     .footerFirstSection {
-        
+
         a {
             display: inline-block;
             margin-left: 10px;
@@ -261,5 +313,13 @@ footer {
         display: block;
         text-decoration: none;
         color: $grey;
+
+        img {
+            transform: scale(0.5);
+        }
+
+        .footerLogo {
+            transform: scale(1);
+        }
     }
 }
