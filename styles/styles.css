@@ -26,6 +26,10 @@ header nav {
   padding-left: 325px;
 }
 
+header nav :hover {
+  color: #e7e7e7;
+}
+
 header nav a {
   text-decoration: none;
   color: #ea6c36;
@@ -36,6 +40,10 @@ header nav a {
   padding-right: 30px;
 }
 
+header nav a:first-child {
+  padding-left: 16px;
+}
+
 header nav a:last-child {
   padding-right: 0;
 }
@@ -43,6 +51,10 @@ header nav a:last-child {
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+}
+
+.bluetext {
+  color: #6eb2cc;
 }
 
 main .bannerImage {
@@ -111,6 +123,16 @@ main .bannerButton {
   text-align: center;
 }
 
+.dropcap:first-letter {
+  color: #ea6c36;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.55;
+  margin-top: 18px;
+  margin-right: 6px;
+}
+
 .homeSection1 {
   margin-top: 10vh;
   display: -ms-grid;
@@ -128,6 +150,7 @@ main .bannerButton {
 }
 
 .homeSection1 p {
+  line-height: 50px;
   width: 50vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -143,7 +166,7 @@ main .bannerButton {
   padding: 15px 60px;
   font-size: 18px;
   position: absolute;
-  margin-top: 20%;
+  margin-top: 27.5%;
   margin-left: 67.5%;
 }
 
@@ -169,6 +192,7 @@ main .bannerButton {
 }
 
 .homeSection2 p {
+  line-height: 50px;
   width: 50vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -184,7 +208,7 @@ main .bannerButton {
   padding: 15px 60px;
   font-size: 18px;
   position: absolute;
-  margin-top: 20%;
+  margin-top: 25%;
   margin-left: 67.5%;
 }
 
@@ -213,6 +237,10 @@ footer {
   padding-right: 5%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+}
+
+footer .footerTitle {
+  font-size: x-large;
 }
 
 footer .footerFirstSection a {
