@@ -4,13 +4,12 @@ $lightteal:#6eb2cc;
 $grey: #e7e7e7;
 $orange: #ea6c36;
 
-// Other Colors
+// Other Colors used
 $black: #000000;
 $white: #fff;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans&display=swap');
-
 $Lato: 'Lato',
 sans-serif;
 $OpenSans: 'Open Sans',
@@ -42,6 +41,7 @@ header {
         padding-left: 2%;
     }
 
+    // Navigation styling within the header
     nav {
         padding-left: 325px;
 
@@ -68,11 +68,19 @@ header {
     }
 }
 
+// h1 styling throughout unless overwritten
 h1 {
     font-family: $Lato;
     font-weight: $light;
 }
 
+// p styling throughout unless overwritten
+p {
+    font-family: $OpenSans;
+}
+
+// bluetext styling, used in spans to change text colours
+// in h1 and p tags
 .bluetext {
     color: $lightteal;
 }
@@ -80,7 +88,6 @@ h1 {
 // Main styling encompassing banner, image, text and
 // button placements
 main {
-
     .bannerImage {
         width: 100%;
         height: 90vh;
@@ -129,22 +136,35 @@ main {
     }
 }
 
-.bannerSubtext {
+// Styling for content on home page under banner
+.bannerSub {
+
     text-align: center;
-    font-weight: 700;
-    margin-left: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+    margin-bottom: 40px;
+
+    .bannerSubtext {
+        display: inline-block;
+        text-align: left;
+        font-weight: 700;
+        margin-left: -10px;
+        margin-top: 20px;
+    }
 }
 
+// Dropcap styling for text under banner
 .bannerDropcap {
     color: #ea6c36;
     font-size: 76px;
     line-height: 60px;
-    margin-right: -10px;
+    float: left;
 }
 
 .bannerPosttext {
     font-family: $OpenSans;
-    font-weight: $light;
+    font-weight: $heavy;
     text-align: center;
 }
 
@@ -158,6 +178,7 @@ main {
     margin-right: 6px;
 }
 
+// Home page styling for first image, accompanying text and link buttons
 .homeSection1 {
     margin-top: 10vh;
     display: grid;
@@ -185,8 +206,8 @@ main {
         padding: 15px 60px;
         font-size: 18px;
         position: absolute;
-        margin-top: 27.5%;
-        margin-left: 67.5%;
+        margin-top: 20%;
+        margin-left: 68%;
     }
 
     a {
@@ -194,6 +215,7 @@ main {
     }
 }
 
+// Home page styling for second image, accompanying text and link buttons
 .homeSection2 {
     margin-top: 10vh;
     display: grid;
@@ -222,8 +244,8 @@ main {
         padding: 15px 60px;
         font-size: 18px;
         position: absolute;
-        margin-top: 25%;
-        margin-left: 67.5%;
+        margin-top: 20%;
+        margin-left: 70%;
     }
 
     a {
@@ -231,8 +253,34 @@ main {
     }
 }
 
+// Image carousel styling
+.class-title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.class-container {
+    padding-top: 20px;
+    width: 40%;
+    margin: auto;
+    overflow: scroll;
+    transition: all;
+}
+
+.class-slide {
+    display: flex;
+    height: 600px;
+
+    p {
+        position: absolute;
+    }
+}
+
+// Newsletter signup section
+
 .newsletter {
     display: grid;
+    padding-top: 50px;
 
     .newsletterImage {
         height: 70vh;
@@ -321,5 +369,49 @@ footer {
         .footerLogo {
             transform: scale(1);
         }
+    }
+}
+
+// Testimonials page specific styling
+
+// Testimonial page banner image and etxt styling
+.testImage {
+    width: 100%;
+    height: 90vh;
+
+    .testBannerText {
+        font-family: $OpenSans;
+        font-weight: $light;
+        position: absolute;
+        width: 350px;
+        top: 25%;
+        left: 10%;
+    }
+}
+
+// Testimonial page styling to apply to each individual testimonial
+.testimonial1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .test1image {
+        float: right;
+        width: 100%;
+        mask-image: linear-gradient(90deg, transparent 10%, $black);
+    }
+
+    .test1text {
+        position: absolute;
+        padding-top: 10%;
+        width: auto;
+        font-size: 45px;
+        width: 70%;
+    }
+
+    .test1subtext {
+        position: absolute;
+        padding-top: 20%;
+        font-size: 25px;
+        width: 50%;
     }
 }
