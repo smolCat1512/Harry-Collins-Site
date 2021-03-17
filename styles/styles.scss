@@ -74,6 +74,11 @@ h1 {
     font-weight: $light;
 }
 
+h2 {
+    font-family: $Lato;
+    font-weight: $light;
+}
+
 // p styling throughout unless overwritten
 p {
     font-family: $OpenSans;
@@ -457,17 +462,16 @@ footer {
 
     .test1text {
         position: absolute;
-        padding-top: 10%;
         width: auto;
         font-size: 45px;
-        width: 70%;
+        width: 60%;
     }
 
     .test1subtext {
         position: absolute;
-        padding-top: 30%;
-        font-size: 25px;
-        width: 50%;
+        font-size: 1.5em;
+        width: 60%;
+        padding-top: 20%;
     }
 }
 

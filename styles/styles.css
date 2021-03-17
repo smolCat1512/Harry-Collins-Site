@@ -57,6 +57,11 @@ h1 {
   font-weight: 300;
 }
 
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
 }
@@ -442,17 +447,16 @@ footer a .footerLogo {
 
 .testimonial1 .test1text {
   position: absolute;
-  padding-top: 10%;
   width: auto;
   font-size: 45px;
-  width: 70%;
+  width: 60%;
 }
 
 .testimonial1 .test1subtext {
   position: absolute;
-  padding-top: 30%;
-  font-size: 25px;
-  width: 50%;
+  font-size: 1.5em;
+  width: 60%;
+  padding-top: 20%;
 }
 
 .aboutBannerImage {
