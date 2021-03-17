@@ -221,6 +221,7 @@ main .bannerButton {
 }
 
 .homeSection1 .homeSectionButton1 {
+  font-family: "Open Sans", sans-serif;
   background: #6EB2CC;
   border-radius: 30px;
   border: none;
@@ -267,6 +268,7 @@ main .bannerButton {
 }
 
 .homeSection2 .homeSectionButton2 {
+  font-family: "Open Sans", sans-serif;
   background: #6EB2CC;
   border-radius: 30px;
   border: none;
@@ -366,8 +368,6 @@ footer {
   display: inline-grid;
   -ms-grid-columns: 2fr 2fr 1fr 1fr;
       grid-template-columns: 2fr 2fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
   background-color: #2f6a87;
   color: #e7e7e7;
   margin-left: -5.5%;
@@ -376,6 +376,10 @@ footer {
   padding-right: 5%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+}
+
+footer .foot1 {
+  padding-left: 20px;
 }
 
 footer .footerTitle {
