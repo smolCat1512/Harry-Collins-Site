@@ -65,7 +65,7 @@ p {
   color: #6eb2cc;
 }
 
-.darkBlueText {
+.darkbluetext {
   color: #2f6a87;
 }
 
@@ -479,22 +479,23 @@ footer a .footerLogo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: left;
+  text-align: right;
 }
 
 .about2 .aboutImage2 {
   width: 100%;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
-  -webkit-mask-image: linear-gradient(90deg, transparent 10%, #000000);
-          mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
-          mask-image: linear-gradient(90deg, transparent 10%, #000000);
+  -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(10%, transparent), to(#000000));
+  -webkit-mask-image: linear-gradient(270deg, transparent 10%, #000000);
+          mask-image: -webkit-gradient(linear, right top, left top, color-stop(10%, transparent), to(#000000));
+          mask-image: linear-gradient(270deg, transparent 10%, #000000);
 }
 
 .about2 .aboutImage2text {
-  text-align: left;
+  text-align: right;
   position: absolute;
+  left: 60%;
   font-size: 25px;
-  width: 70%;
-  line-height: 60px;
+  width: 40%;
+  line-height: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

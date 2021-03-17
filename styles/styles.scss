@@ -86,7 +86,7 @@ p {
     color: $lightteal;
 }
 
-.darkBlueText {
+.darkbluetext {
     color: $darkteal;
 }
 
@@ -488,18 +488,19 @@ footer {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: right;
 
     .aboutImage2 {
         width: 100%;
-        mask-image: linear-gradient(90deg, transparent 10%, $black);
+        mask-image: linear-gradient(270deg, transparent 10%, $black);
     }
 
     .aboutImage2text {
-        text-align: left;
+        text-align: right;
         position: absolute;
+        left: 60%;
         font-size: 25px;
-        width: 70%;
-        line-height: 60px;
+        width: 40%;
+        line-height: 30px;
     }
 }
