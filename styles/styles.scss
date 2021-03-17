@@ -112,7 +112,6 @@ main {
 
     .bannerImage {
         width: 100%;
-        height: 90vh;
         display: flex;
     }
 
@@ -419,6 +418,7 @@ footer {
 .testImage {
     width: 100%;
     height: 90vh;
+    margin-bottom: 40px;
 
     .testBannerText {
         font-family: $OpenSans;
@@ -434,6 +434,7 @@ footer {
 .testimonial1 {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 
     .test1image {
         float: right;
@@ -573,7 +574,6 @@ footer {
 
     h1 {
         position: absolute;
-        
     }
 }
 
@@ -593,11 +593,11 @@ footer {
     grid-area: b;
 }
 
+// Map stylings for contact page
 /* Set the size of the div element that contains the map */
 #map {
-    height: 300px;
+    height: 60vh;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
-
 }
