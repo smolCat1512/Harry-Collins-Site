@@ -236,6 +236,10 @@ main .bannerButton {
   text-decoration: none;
 }
 
+.homeSection1 a:visited {
+  color: #000000;
+}
+
 .homeSection2 {
   margin-top: 10vh;
   display: -ms-grid;
@@ -276,6 +280,10 @@ main .bannerButton {
 
 .homeSection2 a {
   text-decoration: none;
+}
+
+.homeSection2 a:visited {
+  color: #000000;
 }
 
 .class-title {
@@ -610,5 +618,10 @@ footer a .footerLogo {
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+.homepagereturn {
+  text-decoration: none;
+  color: #ea6c36;
 }
 /*# sourceMappingURL=styles.css.map */

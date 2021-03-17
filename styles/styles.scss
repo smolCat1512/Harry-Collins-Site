@@ -254,6 +254,10 @@ main {
     a {
         text-decoration: none;
     }
+
+    a:visited {
+        color: $black;
+    }
 }
 
 // Home page styling for second image, accompanying text and link buttons
@@ -291,6 +295,10 @@ main {
 
     a {
         text-decoration: none;
+    }
+
+    a:visited {
+        color: $black;
     }
 }
 
@@ -600,4 +608,9 @@ footer {
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+}
+
+.homepagereturn {
+    text-decoration: none;
+    color: $orange;
 }
