@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="">
+    <script src="/javascript/map.js"></script>
 </head>
 
 <body>
@@ -36,13 +36,37 @@
         <h1>Contact Page</h1>
     </main>
 
-    <section>
-        
-    </section>
+    <div class="contactdetails">
 
+        <section class="contactdetails1">
+            <h2>Contact Details:</h2>
+            <h2>Telephone numbers:</h2>
+            <p>Business: 0161 123 4567</p>
+            <p>Mobile: 07123456789</p>
+            <br>
+            <h1>Email:</h1>
+            <p>harry.collins@harrycollins.co.uk</p>
+            <h1>Want us to contact you?</h1>
+            <p>Please submit your email address below</p>
+            <form action="/thankyou.html" method="GET">
+                <label for="email">Email:</label><br>
+                <input type="email" is="email" name="email" type="email">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
 
+        <section class="contactdetails2">
+            <h3>Location</h3>
+            <!--The div element for the map -->
+            <div id="map" aria-label="location map"></div>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeBzCwpUiUZb8El3Mw5fBpoTZx1t1MXo8&callback=initMap&libraries=&v=weekly"
+                async>
+            </script>
+        </section>
 
-
+    </div>
 
 
 

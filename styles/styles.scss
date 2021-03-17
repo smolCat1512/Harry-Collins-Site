@@ -577,3 +577,27 @@ footer {
     }
 }
 
+.contactdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    margin-bottom: 40px;
+    font-family: $Lato;
+}
+
+.contactdetails1 {
+    grid-area: a;
+}
+
+.contactdetails2 {
+    grid-area: b;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+
+}

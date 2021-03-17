@@ -580,4 +580,34 @@ footer a .footerLogo {
 .contactbannerimage h1 {
   position: absolute;
 }
+
+.contactdetails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "a b";
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+}
+
+.contactdetails1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.contactdetails2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 /*# sourceMappingURL=styles.css.map */
