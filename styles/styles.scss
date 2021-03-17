@@ -79,18 +79,37 @@ p {
     font-family: $OpenSans;
 }
 
-// bluetext styling, used in spans to change text colours
-// in h1 and p tags
+// colour text stylings, used in spans to change text colours
+// in h1 and p tags or just to amend texxt color for accessibility
+// reasons
 .bluetext {
     color: $lightteal;
 }
 
-// Main styling encompassing banner, image, text and
-// button placements
+.darkBlueText {
+    color: $darkteal;
+}
+
+.orangetext {
+    color: $orange;
+}
+
+.blacktext {
+    color: $black;
+}
+
+.whitetext {
+    color: $white;
+}
+
+
+// Main styling encompassing banners, images, text and
+// buttons placement across banner sections on site
 main {
     .bannerImage {
         width: 100%;
         height: 90vh;
+        display: flex;
     }
 
     h1 {
@@ -134,6 +153,25 @@ main {
         font-size: 18px;
         font-weight: 700;
     }
+}
+
+// About us page banner stylings
+
+.bannerAboutUs {
+    font-family: $OpenSans;
+    position: absolute;
+    width: 350px;
+    top: 40%;
+    left: 10%;
+}
+
+.bannerAboutSubtext {
+    font-family: $OpenSans;
+    font-weight: $light;
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 10%;
 }
 
 // Styling for content on home page under banner
@@ -413,5 +451,55 @@ footer {
         padding-top: 20%;
         font-size: 25px;
         width: 50%;
+    }
+}
+
+// About page styling to apply to each individual testimonial
+
+.aboutBannerImage {
+    width: 100%;
+    height: 90vh;
+    mask-image: linear-gradient(90deg, transparent 10%, $black);
+}
+
+.about1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .aboutImage1 {
+        width: 100%;
+        mask-image: linear-gradient(90deg, transparent 10%, $black);
+    }
+
+    .aboutImage1text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 45px;
+        width: 70%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.about2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    .aboutImage2 {
+        width: 100%;
+        mask-image: linear-gradient(90deg, transparent 10%, $black);
+    }
+
+    .aboutImage2text {
+        text-align: left;
+        position: absolute;
+        font-size: 25px;
+        width: 70%;
+        line-height: 60px;
     }
 }
