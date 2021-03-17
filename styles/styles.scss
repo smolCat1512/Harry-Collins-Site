@@ -519,13 +519,22 @@ footer {
         mask-image: linear-gradient(270deg, transparent 10%, $black);
     }
 
-    .aboutImage2text {
+    .aboutImage2text1 {
         text-align: right;
         position: absolute;
         left: 60%;
-        font-size: 25px;
+        font-size: 40px;
         width: 40%;
-        line-height: 30px;
+    }
+
+    .aboutImage2text2 {
+        margin-top: 50px;
+        text-align: right;
+        position: absolute;
+        left: 40%;
+        font-size: 20px;
+        width: 60%;
+        line-height: 3;
     }
 }
 

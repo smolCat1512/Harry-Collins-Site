@@ -515,13 +515,22 @@ footer a .footerLogo {
           mask-image: linear-gradient(270deg, transparent 10%, #000000);
 }
 
-.about2 .aboutImage2text {
+.about2 .aboutImage2text1 {
   text-align: right;
   position: absolute;
   left: 60%;
-  font-size: 25px;
+  font-size: 40px;
   width: 40%;
-  line-height: 30px;
+}
+
+.about2 .aboutImage2text2 {
+  margin-top: 50px;
+  text-align: right;
+  position: absolute;
+  left: 40%;
+  font-size: 20px;
+  width: 60%;
+  line-height: 3;
 }
 
 .blogimage1 {
