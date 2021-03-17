@@ -553,9 +553,17 @@ footer a .footerLogo {
   width: 100%;
 }
 
+.blogleft h2 {
+  padding: 0;
+  margin: 0;
+  padding-left: 5%;
+}
+
 .blogleft p {
-  padding-left: 10px;
-  text-align: left;
+  position: absolute;
+  width: 45%;
+  padding-left: 47.5%;
+  padding-top: 5%;
 }
 
 .blogleft a {
@@ -578,8 +586,12 @@ footer a .footerLogo {
   width: 100%;
 }
 
+.blogright h2 {
+  padding: 0;
+  margin: 0;
+}
+
 .blogright p {
-  padding-left: 10px;
   text-align: left;
 }
 
