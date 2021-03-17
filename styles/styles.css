@@ -81,6 +81,15 @@ p {
   color: #fff;
 }
 
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 main .bannerImage {
   width: 100%;
   height: 90vh;
@@ -94,7 +103,7 @@ main h1 {
   font-weight: 300;
   position: absolute;
   width: 350px;
-  top: 25%;
+  top: 10%;
   left: 10%;
 }
 
@@ -119,7 +128,7 @@ main .bannerTelephone {
 main .bannerButton {
   position: absolute;
   top: 70%;
-  left: 10%;
+  left: 5%;
   background-color: #ea6c36;
   color: #000000;
   border: none;
@@ -354,7 +363,6 @@ footer {
       grid-template-rows: auto;
   background-color: #2f6a87;
   color: #e7e7e7;
-  margin-top: 5%;
   margin-left: -5.5%;
   margin-right: -5.5%;
   padding-left: 5%;
@@ -497,5 +505,79 @@ footer a .footerLogo {
   font-size: 25px;
   width: 40%;
   line-height: 30px;
+}
+
+.blogimage1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.blogleft {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.blogleft img {
+  width: 100%;
+}
+
+.blogleft p {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.blogleft a {
+  color: #ea6c36;
+  padding-left: 10px;
+}
+
+.blogright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.blogright img {
+  width: 100%;
+}
+
+.blogright p {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.blogright a {
+  color: #ea6c36;
+  padding-left: 10px;
+}
+
+.contactbannerimage {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
+  -webkit-mask-image: linear-gradient(90deg, transparent 10%, #000000);
+          mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
+          mask-image: linear-gradient(90deg, transparent 10%, #000000);
+}
+
+.contactbannerimage h1 {
+  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */
