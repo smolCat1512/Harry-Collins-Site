@@ -398,6 +398,7 @@ footer {
     padding-right: 5%;
     font-family: $OpenSans;
     font-weight: $light;
+    text-align: left;
 
     .foot1 {
         padding-left: 20px;
@@ -411,7 +412,9 @@ footer {
 
         a {
             display: inline-block;
+            margin: 0;
             margin-left: 10px;
+            padding-top: 10px;
         }
     }
 
@@ -426,8 +429,13 @@ footer {
 
         .footerLogo {
             transform: scale(1);
+            padding-top: 10px;
         }
     }
+}
+
+.foot1, .foot2 {
+    padding-top: 10px;
 }
 
 // Testimonials page specific styling
@@ -703,5 +711,19 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+$mobile: 480px;
+@media (max-width: $mobile) {
+    body {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto;
+        width: auto;
+
+        img {
+            width: 100%;
+        }
     }
 }
