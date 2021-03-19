@@ -12,61 +12,63 @@
 </head>
 
 <body>
-    <div class="headerContainer">
-        <header>
-            <a href="/">
-                <img src="/images/Logo.png" alt="Logo">
-            </a>
+    <header>
+        <a href="/">
+            <img src="/images/Logo.png" alt="Logo">
+        </a>
 
-            <h1>Harry Collins Athlete Development</h1>
+        <h1>Harry Collins Athlete Development</h1>
 
-            <nav>
-                <a href="/">home</a>
-                <a href="testimonials.html">testimonials</a>
-                <a href="about.html">about</a>
-                <a href="blogs.html">blogs</a>
-                <a href="contact.html" style="text-decoration: underline;">contact</a>
-            </nav>
-        </header>
-    </div>
+        <nav>
+            <a href="/">home</a>
+            <a href="testimonials.html">testimonials</a>
+            <a href="about.html">about</a>
+            <a href="blogs.html">blogs</a>
+            <a href="contact.html" style="text-decoration: underline;">contact</a>
+        </nav>
+    </header>
 
-    <main>
+    <section class="banner">
         <img class="contactbannerimage fade-in" src="/images/HarryCollins.jpeg"
             alt="Picture of Harry Collins with arms folded, standing in a boxing ring">
         <h1>Contact Page</h1>
+    </section>
+
+    <main>
+
+        <div class="contactdetails">
+
+            <section class="contactdetails1">
+                <h2>Contact Details:</h2>
+                <h2>Telephone numbers:</h2>
+                <p>Business: 0161 123 4567</p>
+                <p>Mobile: 07123456789</p>
+                <br>
+                <h1>Email:</h1>
+                <p>harry.collins@harrycollins.co.uk</p>
+                <h1>Want us to contact you?</h1>
+                <p>Please submit your email address below</p>
+                <form action="/thankyou.html" method="GET">
+                    <label for="email">Email:</label><br>
+                    <input type="email" is="email" name="email" type="email">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section class="contactdetails2">
+                <h2>Location</h2>
+                <!--The div element for the map -->
+                <div id="map" aria-label="location map"></div>
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeBzCwpUiUZb8El3Mw5fBpoTZx1t1MXo8&callback=initMap&libraries=&v=weekly"
+                    async>
+                </script>
+            </section>
+        </div>
     </main>
 
-    <div class="contactdetails">
 
-        <section class="contactdetails1">
-            <h2>Contact Details:</h2>
-            <h2>Telephone numbers:</h2>
-            <p>Business: 0161 123 4567</p>
-            <p>Mobile: 07123456789</p>
-            <br>
-            <h1>Email:</h1>
-            <p>harry.collins@harrycollins.co.uk</p>
-            <h1>Want us to contact you?</h1>
-            <p>Please submit your email address below</p>
-            <form action="/thankyou.html" method="GET">
-                <label for="email">Email:</label><br>
-                <input type="email" is="email" name="email" type="email">
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-
-        <section class="contactdetails2">
-            <h2>Location</h2>
-            <!--The div element for the map -->
-            <div id="map" aria-label="location map"></div>
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeBzCwpUiUZb8El3Mw5fBpoTZx1t1MXo8&callback=initMap&libraries=&v=weekly"
-                async>
-            </script>
-        </section>
-
-    </div>
 
 
 

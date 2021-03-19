@@ -82,7 +82,7 @@ p {
   color: #fff;
 }
 
-main {
+.banner {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,14 +91,14 @@ main {
       flex-wrap: wrap;
 }
 
-main .bannerImage {
+.banner .bannerImage {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main h1 {
+.banner h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
@@ -107,7 +107,7 @@ main h1 {
   left: 10%;
 }
 
-main .bannerEmail {
+.banner .bannerEmail {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
@@ -116,7 +116,7 @@ main .bannerEmail {
   left: 10%;
 }
 
-main .bannerTelephone {
+.banner .bannerTelephone {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
@@ -125,7 +125,7 @@ main .bannerTelephone {
   left: 10%;
 }
 
-main .bannerButton {
+.banner .bannerButton {
   position: absolute;
   top: 70%;
   left: 5%;
@@ -144,7 +144,7 @@ main .bannerButton {
   font-family: "Open Sans", sans-serif;
   position: absolute;
   width: 350px;
-  top: 40%;
+  padding-top: 10%;
   left: 10%;
 }
 
@@ -424,7 +424,6 @@ footer a .footerLogo {
 
 .testImage .testBannerText {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
   position: absolute;
   width: 350px;
   top: 25%;

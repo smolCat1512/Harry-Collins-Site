@@ -106,7 +106,7 @@ p {
 
 // Main styling encompassing banners, images, text and
 // buttons placement across banner sections on site
-main {
+.banner {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -165,7 +165,7 @@ main {
     font-family: $OpenSans;
     position: absolute;
     width: 350px;
-    top: 40%;
+    padding-top: 10%;
     left: 10%;
 }
 
@@ -444,7 +444,6 @@ footer {
 
     .testBannerText {
         font-family: $OpenSans;
-        font-weight: $light;
         position: absolute;
         width: 350px;
         top: 25%;
