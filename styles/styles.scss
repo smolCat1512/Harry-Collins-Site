@@ -307,6 +307,7 @@ p {
 
 // Image carousel styling
 .class-title {
+    font-size: 2em;
     padding-top: 50px;
     text-align: center;
 }
@@ -317,9 +318,7 @@ p {
     margin: auto;
     overflow: scroll;
     transition: all;
-}
 
-.class-slide {
     display: flex;
     height: 600px;
 
@@ -341,10 +340,6 @@ p {
 
     }
 
-    span {
-        color: $lightteal;
-    }
-
     p {
         font-size: 36px;
         font-family: $OpenSans;
@@ -359,6 +354,9 @@ p {
         font-weight: $light;
         position: absolute;
         margin-top: 20%;
+        background-color: $lightteal;
+        border-radius: 5px;
+        padding: 20px;
 
         input {
             font-size: 18px;
