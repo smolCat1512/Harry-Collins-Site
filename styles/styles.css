@@ -352,7 +352,7 @@ p {
 }
 
 .newsletter form {
-  font-size: 36px;
+  font-size: 2.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
@@ -363,7 +363,7 @@ p {
 }
 
 .newsletter form input {
-  font-size: 18px;
+  font-size: .5em;
 }
 
 .newsletter button {
@@ -380,21 +380,21 @@ p {
 footer {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: 2fr 2fr 1fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr 1fr;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  padding-left: 2%;
   background-color: #2f6a87;
   color: #e7e7e7;
   margin-left: -5.5%;
   margin-right: -5.5%;
-  padding-left: 5%;
-  padding-right: 5%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-align: left;
 }
 
-footer .foot1 {
-  padding-left: 20px;
+footer section {
+  padding-top: 10px;
 }
 
 footer .footerTitle {
@@ -403,8 +403,6 @@ footer .footerTitle {
 
 footer .footerFirstSection a {
   display: inline-block;
-  margin: 0;
-  margin-left: 10px;
   padding-top: 10px;
 }
 
@@ -422,11 +420,6 @@ footer a img {
 footer a .footerLogo {
   -webkit-transform: scale(1);
           transform: scale(1);
-  padding-top: 10px;
-}
-
-.foot1,
-.foot2 {
   padding-top: 10px;
 }
 
