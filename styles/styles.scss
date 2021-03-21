@@ -234,6 +234,8 @@ p {
     .homeImage1 {
         height: 60vh;
         mask-image: linear-gradient(to left, transparent 10%, black);
+        // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        // filter: grayscale(100%);
     }
 
     p {
@@ -311,6 +313,70 @@ p {
 }
 
 // Image carousel styling
+
+#slider {
+    overflow: hidden;
+    width: 50%;
+}
+
+#slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }    
+
+    70% {
+        left: -250%;
+    }
+
+    75% {
+        left: -250%;
+    }
+
+    90% {
+        left: -300%;
+    }
+
+    100% {
+        left: -300%;
+    }
+
+
+
+}
+
+
+
+// Image carousel styling
+
 .class-title {
     font-size: 2em;
     padding-top: 50px;

@@ -305,6 +305,85 @@ p {
   color: #000000;
 }
 
+#slider {
+  overflow: hidden;
+  width: 50%;
+}
+
+#slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -250%;
+  }
+  75% {
+    left: -250%;
+  }
+  90% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -250%;
+  }
+  75% {
+    left: -250%;
+  }
+  90% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
 .class-title {
   font-size: 2em;
   padding-top: 50px;
