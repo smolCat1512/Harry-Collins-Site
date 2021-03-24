@@ -137,6 +137,11 @@ p {
         width: 350px;
         top: 50%;
         left: 10%;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     }
 
     .bannerTelephone {
@@ -316,7 +321,8 @@ p {
 
 #slider {
     overflow: hidden;
-    width: 50%;
+    width: 30%;
+    margin: auto;
 }
 
 #slider figure {
@@ -338,23 +344,23 @@ p {
     }
 
     20% {
-        left: -100%;
+        left: -50%;
     }
 
     25% {
-        left: -100%;
+        left: -50%;
     }
 
     45% {
-        left: -200%;
+        left: -100%;
     }
 
     50% {
-        left: -200%;
+        left: -150%;
     }    
 
     70% {
-        left: -250%;
+        left: -200%;
     }
 
     75% {
@@ -381,21 +387,6 @@ p {
     font-size: 2em;
     padding-top: 50px;
     text-align: center;
-}
-
-.class-container {
-    padding-top: 20px;
-    width: 40%;
-    margin: auto;
-    overflow: scroll;
-    transition: all;
-
-    display: flex;
-    height: 600px;
-
-    p {
-        position: absolute;
-    }
 }
 
 // Newsletter signup section
@@ -691,6 +682,11 @@ footer {
 
 .contactdetails1 {
     grid-area: a;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .contactdetails2 {
