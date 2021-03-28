@@ -323,6 +323,8 @@ p {
   left: 0;
   -webkit-animation: 20s slider infinite;
           animation: 20s slider infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 #slider figure img {
@@ -344,19 +346,19 @@ p {
     left: -100%;
   }
   50% {
-    left: -150%;
+    left: -125%;
   }
   70% {
-    left: -200%;
+    left: -150%;
   }
   75% {
-    left: -250%;
+    left: -175%;
   }
   90% {
-    left: -300%;
+    left: -200%;
   }
   100% {
-    left: -300%;
+    left: -200%;
   }
 }
 
@@ -374,19 +376,19 @@ p {
     left: -100%;
   }
   50% {
-    left: -150%;
+    left: -125%;
   }
   70% {
-    left: -200%;
+    left: -150%;
   }
   75% {
-    left: -250%;
+    left: -175%;
   }
   90% {
-    left: -300%;
+    left: -200%;
   }
   100% {
-    left: -300%;
+    left: -200%;
   }
 }
 

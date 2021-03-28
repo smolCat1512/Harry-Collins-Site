@@ -331,6 +331,7 @@ p {
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
+    animation-direction: alternate;
 }
 
 #slider figure img {
@@ -356,23 +357,23 @@ p {
     }
 
     50% {
-        left: -150%;
+        left: -125%;
     }    
 
     70% {
-        left: -200%;
+        left: -150%;
     }
 
     75% {
-        left: -250%;
+        left: -175%;
     }
 
     90% {
-        left: -300%;
+        left: -200%;
     }
 
     100% {
-        left: -300%;
+        left: -200%;
     }
 
 
