@@ -230,6 +230,33 @@ p {
     margin-right: 6px;
 }
 
+// Fade in classes to allow text animation using class changing, 
+// this uses the fade.js file functions to switch
+
+.fade-in-text {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.fade-in-text2 {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 3s all ease-in-out;
+}
+
+.text-appear2 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 // Home page styling for first image, accompanying text and link buttons
 .homeSection1 {
     margin-top: 10vh;
@@ -245,11 +272,11 @@ p {
 
     p {
         line-height: 50px;
-        width: 50vw;
+        width: 40vw;
         font-family: $OpenSans;
         font-weight: $light;
         position: absolute;
-        left: 40%;
+
     }
 
     .homeSectionButton1 {
@@ -261,8 +288,8 @@ p {
         padding: 15px 60px;
         font-size: 18px;
         position: absolute;
-        margin-top: 20%;
-        margin-left: 68%;
+        margin-top: 60%;
+        margin-left: 55%;
     }
 
     a {
@@ -288,11 +315,10 @@ p {
 
     p {
         line-height: 50px;
-        width: 50vw;
+        width: 40vw;
         font-family: $OpenSans;
         font-weight: $light;
         position: absolute;
-        left: 40%;
     }
 
     .homeSectionButton2 {
@@ -304,8 +330,8 @@ p {
         padding: 15px 60px;
         font-size: 18px;
         position: absolute;
-        margin-top: 20%;
-        margin-left: 70%;
+        margin-top: 60%;
+        margin-left: 55%;
     }
 
     a {
@@ -358,7 +384,7 @@ p {
 
     50% {
         left: -125%;
-    }    
+    }
 
     70% {
         left: -150%;

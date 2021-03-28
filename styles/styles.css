@@ -217,6 +217,36 @@ p {
   margin-right: 6px;
 }
 
+.fade-in-text {
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 3s all ease-in-out;
+  transition: 3s all ease-in-out;
+}
+
+.text-appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.fade-in-text2 {
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 3s all ease-in-out;
+  transition: 3s all ease-in-out;
+}
+
+.text-appear2 {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .homeSection1 {
   margin-top: 10vh;
   display: -ms-grid;
@@ -235,11 +265,10 @@ p {
 
 .homeSection1 p {
   line-height: 50px;
-  width: 50vw;
+  width: 40vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
-  left: 40%;
 }
 
 .homeSection1 .homeSectionButton1 {
@@ -251,8 +280,8 @@ p {
   padding: 15px 60px;
   font-size: 18px;
   position: absolute;
-  margin-top: 20%;
-  margin-left: 68%;
+  margin-top: 60%;
+  margin-left: 55%;
 }
 
 .homeSection1 a {
@@ -282,11 +311,10 @@ p {
 
 .homeSection2 p {
   line-height: 50px;
-  width: 50vw;
+  width: 40vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
-  left: 40%;
 }
 
 .homeSection2 .homeSectionButton2 {
@@ -298,8 +326,8 @@ p {
   padding: 15px 60px;
   font-size: 18px;
   position: absolute;
-  margin-top: 20%;
-  margin-left: 70%;
+  margin-top: 60%;
+  margin-left: 55%;
 }
 
 .homeSection2 a {
