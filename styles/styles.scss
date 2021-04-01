@@ -513,6 +513,15 @@ footer {
             padding-top: 10px;
         }
     }
+
+    // Style hover for quick links in footer, made not first
+    // child so title of "Quick Links" does not change on hover
+    // as is not a "link"
+    .foot2 {
+        a:hover:not(:first-child)  {
+            color: $orange;
+        }
+    }
 }
 
 // Testimonials page specific styling
