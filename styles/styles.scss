@@ -17,6 +17,23 @@ sans-serif;
 $light: 300;
 $heavy:700;
 
+// Media queries and SCSS mixins, used for mobile and tablet
+// responsive design requirements
+$mobile: 414px;
+$tablet: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{tablet}) {
+    @content;
+  }
+}
+
 // Body Styles
 body {
     background-color: black;
@@ -24,6 +41,10 @@ body {
     margin: 0;
     margin-left: 5%;
     margin-right: 5%;
+
+    @include mobile {
+        margin: 0;
+    }
 }
 
 // Header styling
@@ -38,6 +59,12 @@ header {
     height: 60px;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+        flex-direction: row;
+        padding: 10%;
+        justify-content: center;   
+    }
 
     h2 {
         padding-left: 1%;
@@ -65,7 +92,11 @@ header {
                 padding-left: 16px;
             }
         }
-
+        @include mobile {
+            flex-direction: row;
+            padding: 10%;
+            justify-content: center;   
+        }
     }
 }
 

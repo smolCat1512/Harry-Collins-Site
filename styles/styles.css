@@ -7,6 +7,12 @@ body {
   margin-right: 5%;
 }
 
+@media (max-width: 414px) {
+  body {
+    margin: 0;
+  }
+}
+
 header {
   height: 80px;
   display: -webkit-box;
@@ -27,6 +33,19 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 414px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 header h2 {
@@ -62,6 +81,19 @@ header nav a {
 
 header nav a:first-child {
   padding-left: 16px;
+}
+
+@media (max-width: 414px) {
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 h1 {
