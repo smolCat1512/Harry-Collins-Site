@@ -420,6 +420,88 @@ p {
   }
 }
 
+#slider2 {
+  overflow: hidden;
+  width: 30%;
+  margin: auto;
+}
+
+#slider2 figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#slider2 figure img {
+  float: left;
+  width: 20%;
+}
+
+@-webkit-keyframes slider2 {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -50%;
+  }
+  25% {
+    left: -50%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -125%;
+  }
+  70% {
+    left: -150%;
+  }
+  75% {
+    left: -175%;
+  }
+  90% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@keyframes slider2 {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -50%;
+  }
+  25% {
+    left: -50%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -125%;
+  }
+  70% {
+    left: -150%;
+  }
+  75% {
+    left: -175%;
+  }
+  90% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
 .class-title {
   font-size: 2em;
   padding-top: 50px;
@@ -497,6 +579,7 @@ footer section {
 
 footer .footerTitle {
   font-size: x-large;
+  margin: 0;
 }
 
 footer .footerFirstSection a {
