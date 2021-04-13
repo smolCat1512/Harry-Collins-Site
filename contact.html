@@ -47,8 +47,8 @@
                 <h1>Want us to contact you?</h1>
                 <p>Please submit your email address below</p>
                 <form action="/thankyou.html" method="GET">
-                    <label for="email">Email:</label><br>
-                    <input type="email" is="email" name="email" type="email">
+                    <label>Email:</label><br>
+                    <input type="email" name="email">
                     <input type="submit" value="Submit">
                 </form>
             </section>
@@ -56,7 +56,7 @@
             <section class="contactdetails2">
                 <h2>Location</h2>
                 <!--The div element for the map -->
-                <div id="map" aria-label="location map"></div>
+                <div id="map"></div>
                 <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeBzCwpUiUZb8El3Mw5fBpoTZx1t1MXo8&callback=initMap&libraries=&v=weekly"
@@ -91,7 +91,7 @@
         </p>
 
         <section class="foot1">
-            <a class="footerTitle">About</a>
+            <h2 class="footerTitle">About</h2>
             <a href="/about.html">About Me</a>
             <a href="#">Cookies Policy</a>
             <a href="#">Privacy Statement</a>
@@ -99,7 +99,7 @@
         </section>
 
         <section class="foot2">
-            <a class="footerTitle">Quick Links</a>
+            <h2 class="footerTitle">Quick Links</h2>
             <a href="/">Home</a>
             <a href="/testimonials.html">Testimonials</a>
             <a href="/about.html">About</a>
@@ -108,8 +108,8 @@
         </section>
 
     </footer>
-
+    <script src="/javascript/map.js"></script>
 </body>
-<script src="/javascript/map.js"></script>
+
 
 </html>
