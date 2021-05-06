@@ -715,6 +715,7 @@ p {
   -webkit-mask-image: linear-gradient(to right, transparent 10%, #000000);
           mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
           mask-image: linear-gradient(to right, transparent 10%, #000000);
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -842,6 +843,7 @@ footer .foot2 a:hover:not(:first-child) {
   height: auto;
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -884,6 +886,7 @@ footer .foot2 a:hover:not(:first-child) {
   -webkit-mask-image: linear-gradient(90deg, transparent 10%, #000000);
           mask-image: -webkit-gradient(linear, left top, right top, color-stop(10%, transparent), to(#000000));
           mask-image: linear-gradient(90deg, transparent 10%, #000000);
+  position: relative;
 }
 
 @media (max-width: 768px) {

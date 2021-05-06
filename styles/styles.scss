@@ -616,6 +616,7 @@ p {
         height: 70vh;
         width: 100%;
         mask-image: linear-gradient(to right, transparent 10%, $black);
+        position: relative;
 
         @include mobile() {
             height: 40vh;
@@ -745,6 +746,7 @@ footer {
         width: 100%;
         height: auto;
         filter: brightness(40%);
+        position: relative;
 
         @include mobile() {
             height: 40vh;
@@ -779,6 +781,7 @@ footer {
         float: right;
         width: 100%;
         mask-image: linear-gradient(90deg, transparent 10%, $black);
+        position: relative;
 
         @include mobile() {
             width: 100vw;
