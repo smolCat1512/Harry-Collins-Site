@@ -884,6 +884,14 @@ footer .foot2 a:hover:not(:first-child) {
           mask-image: linear-gradient(90deg, transparent 10%, #000000);
 }
 
+@media (max-width: 768px) {
+  .testimonial1 .test1image {
+    width: 100vw;
+    height: auto;
+    padding-top: 10%;
+  }
+}
+
 .testimonial1 .test1text {
   position: absolute;
   width: auto;
@@ -891,11 +899,27 @@ footer .foot2 a:hover:not(:first-child) {
   width: 60%;
 }
 
+@media (max-width: 768px) {
+  .testimonial1 .test1text {
+    padding-top: 10%;
+    font-size: 1em;
+    width: 100vw;
+  }
+}
+
 .testimonial1 .test1subtext {
   position: absolute;
   font-size: 1.5em;
   width: 60%;
   padding-top: 20%;
+}
+
+@media (max-width: 768px) {
+  .testimonial1 .test1subtext {
+    font-size: 1em;
+    padding-top: 30%;
+    width: 80vw;
+  }
 }
 
 .aboutBannerImage {

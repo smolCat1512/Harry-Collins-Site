@@ -777,6 +777,12 @@ footer {
         float: right;
         width: 100%;
         mask-image: linear-gradient(90deg, transparent 10%, $black);
+
+        @include mobile() {
+            width: 100vw;
+            height: auto;
+            padding-top: 10%;
+        }
     }
 
     .test1text {
@@ -784,6 +790,12 @@ footer {
         width: auto;
         font-size: 45px;
         width: 60%;
+
+        @include mobile() {
+            padding-top: 10%;
+            font-size: 1em;
+            width: 100vw;
+        }
     }
 
     .test1subtext {
@@ -791,6 +803,12 @@ footer {
         font-size: 1.5em;
         width: 60%;
         padding-top: 20%;
+
+        @include mobile() {
+            font-size: 1em;
+            padding-top: 30%;
+            width: 80vw;
+        }
     }
 }
 
