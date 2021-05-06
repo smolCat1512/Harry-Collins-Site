@@ -304,12 +304,14 @@ p {
 @media (max-width: 768px) {
   .dropcap:first-letter {
     font-size: 3rem;
+    padding-left: 5%;
   }
 }
 
 @media (max-width: 768px) {
   .dropcap {
     width: 80vw;
+    padding-left: 10%;
   }
 }
 
@@ -390,7 +392,7 @@ p {
     position: absolute;
     line-height: 1.5em;
     width: 90vw;
-    left: -370px;
+    left: -420px;
   }
 }
 
@@ -409,7 +411,7 @@ p {
 
 @media (max-width: 768px) {
   .homeSection1 .homeSectionButton1 {
-    left: -370px;
+    left: -340px;
     top: 300px;
     font-size: 0.75em;
     padding: 5px 40px;
@@ -461,7 +463,7 @@ p {
 
 .homeSection2 p {
   line-height: 50px;
-  width: 80vw;
+  width: 40vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
@@ -472,7 +474,7 @@ p {
     position: absolute;
     line-height: 1.5em;
     width: 90vw;
-    left: -370px;
+    left: -420px;
   }
 }
 
@@ -491,8 +493,8 @@ p {
 
 @media (max-width: 768px) {
   .homeSection2 .homeSectionButton2 {
-    left: -370px;
-    top: 250px;
+    left: -340px;
+    top: 260px;
     font-size: 0.75em;
     padding: 5px 40px;
   }
@@ -1280,20 +1282,6 @@ footer .foot2 a:hover:not(:first-child) {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-columns: 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    width: 100%;
-  }
-  body img {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

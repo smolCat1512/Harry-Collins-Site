@@ -294,12 +294,14 @@ p {
 
     @include mobile() {
         font-size: 3rem;
+        padding-left: 5%;
     }
 }
 
 .dropcap {
     @include mobile() {
         width: 80vw;
+        padding-left: 10%;
     }
 }
 
@@ -361,7 +363,7 @@ p {
             position: absolute;
             line-height: 1.5em;
             width: 90vw;
-            left: -370px;
+            left: -420px;
         }
     }
 
@@ -378,7 +380,7 @@ p {
         margin-left: 55%;
 
         @include mobile() {
-            left: -370px;
+            left: -340px;
             top: 300px;
             font-size: 0.75em;
             padding: 5px 40px;
@@ -417,7 +419,7 @@ p {
 
     p {
         line-height: 50px;
-        width: 80vw;
+        width: 40vw;
         font-family: $OpenSans;
         font-weight: $light;
         position: absolute;
@@ -426,7 +428,7 @@ p {
             position: absolute;
             line-height: 1.5em;
             width: 90vw;
-            left: -370px;
+            left: -420px;
         }
     }
 
@@ -443,8 +445,8 @@ p {
         margin-left: 55%;
 
         @include mobile() {
-            left: -370px;
-            top: 250px;
+            left: -340px;
+            top: 260px;
             font-size: 0.75em;
             padding: 5px 40px;
         }
@@ -1141,20 +1143,5 @@ footer {
 
     100% {
         opacity: 1;
-    }
-}
-
-$mobile: 480px;
-
-@media (max-width: $mobile) {
-    body {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-
-        img {
-            width: 100%;
-        }
     }
 }
