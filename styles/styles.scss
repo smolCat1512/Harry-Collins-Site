@@ -1035,10 +1035,21 @@ footer {
     grid-template-areas: "a b";
     margin-bottom: 40px;
     font-family: $Lato;
+
+    @include mobile() {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'a'
+        'b';
+        margin-bottom: 5%;
+    }
 }
 
 .contactdetails1 {
     grid-area: a;
+
+    @include mobile() {
+        padding-left: 5%;
+    }
 
     a {
         text-decoration: none;
@@ -1057,6 +1068,11 @@ footer {
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+
+    @include mobile() {
+        height: 40vh;
+        width: 100vw;
+    }
 }
 
 .homepagereturn {

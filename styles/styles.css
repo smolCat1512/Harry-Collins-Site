@@ -1202,10 +1202,25 @@ footer .foot2 a:hover:not(:first-child) {
   font-family: "Lato", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .contactdetails {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'a' 'b';
+    margin-bottom: 5%;
+  }
+}
+
 .contactdetails1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
+}
+
+@media (max-width: 768px) {
+  .contactdetails1 {
+    padding-left: 5%;
+  }
 }
 
 .contactdetails1 a {
@@ -1225,6 +1240,13 @@ footer .foot2 a:hover:not(:first-child) {
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 40vh;
+    width: 100vw;
+  }
 }
 
 .homepagereturn {
