@@ -7,9 +7,10 @@ body {
   margin-right: 5%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   body {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -35,24 +36,27 @@ header {
           justify-content: space-between;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 10%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
 header h2 {
   padding-left: 1%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    width: 25%;
+  }
 }
 
 header nav {
@@ -83,16 +87,21 @@ header nav a:first-child {
   padding-left: 16px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   header nav {
-    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 10%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    font-size: 1em;
+    padding-left: 10%;
   }
 }
 
@@ -146,6 +155,13 @@ p {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .banner .bannerImage {
+    padding: 0;
+    width: 95vw;
+  }
+}
+
 .banner h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -155,6 +171,13 @@ p {
   left: 10%;
 }
 
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1em;
+    top: 2%;
+  }
+}
+
 .banner .bannerEmail {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -162,6 +185,12 @@ p {
   width: 350px;
   top: 50%;
   left: 10%;
+}
+
+@media (max-width: 768px) {
+  .banner .bannerEmail {
+    top: 30%;
+  }
 }
 
 .banner .bannerEmail a {
@@ -178,6 +207,12 @@ p {
   left: 10%;
 }
 
+@media (max-width: 768px) {
+  .banner .bannerTelephone {
+    top: 40%;
+  }
+}
+
 .banner .bannerButton {
   position: absolute;
   top: 70%;
@@ -191,6 +226,13 @@ p {
   border-radius: 10px;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .banner .bannerButton {
+    font-size: 1em;
+    padding: 10px 50px;
+  }
 }
 
 .bannerAboutUs {
@@ -239,6 +281,14 @@ p {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .bannerPosttext {
+    display: inline-block;
+    text-align: left;
+    padding-left: 5%;
+  }
+}
+
 .dropcap:first-letter {
   color: #ea6c36;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
@@ -247,6 +297,18 @@ p {
   line-height: 0.55;
   margin-top: 18px;
   margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .dropcap:first-letter {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropcap {
+    width: 80vw;
+  }
 }
 
 .fade-in-text {
@@ -287,6 +349,14 @@ p {
       grid-template-columns: 1fr 2fr;
 }
 
+@media (max-width: 768px) {
+  .homeSection1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .homeSection1 .homeImage1 {
   height: 60vh;
   -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(10%, transparent), to(black));
@@ -295,12 +365,31 @@ p {
           mask-image: linear-gradient(to left, transparent 10%, black);
 }
 
+@media (max-width: 768px) {
+  .homeSection1 .homeImage1 {
+    height: 40vh;
+    -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(20%, transparent), to(black));
+    -webkit-mask-image: linear-gradient(to left, transparent 20%, black);
+            mask-image: -webkit-gradient(linear, right top, left top, color-stop(20%, transparent), to(black));
+            mask-image: linear-gradient(to left, transparent 20%, black);
+  }
+}
+
 .homeSection1 p {
   line-height: 50px;
   width: 40vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .homeSection1 p {
+    position: absolute;
+    line-height: 1.5em;
+    width: 90vw;
+    left: -370px;
+  }
 }
 
 .homeSection1 .homeSectionButton1 {
@@ -314,6 +403,15 @@ p {
   position: absolute;
   margin-top: 60%;
   margin-left: 55%;
+}
+
+@media (max-width: 768px) {
+  .homeSection1 .homeSectionButton1 {
+    left: -370px;
+    top: 300px;
+    font-size: 0.75em;
+    padding: 5px 40px;
+  }
 }
 
 .homeSection1 a {
@@ -332,6 +430,14 @@ p {
       grid-template-columns: 1fr 2fr;
 }
 
+@media (max-width: 768px) {
+  .homeSection2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .homeSection2 .homeImage2 {
   margin-right: 0;
   height: 60vh;
@@ -341,12 +447,31 @@ p {
           mask-image: linear-gradient(to left, transparent 5%, black);
 }
 
+@media (max-width: 768px) {
+  .homeSection2 .homeImage2 {
+    height: 40vh;
+    -webkit-mask-image: -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), to(black));
+    -webkit-mask-image: linear-gradient(to left, transparent 30%, black);
+            mask-image: -webkit-gradient(linear, right top, left top, color-stop(30%, transparent), to(black));
+            mask-image: linear-gradient(to left, transparent 30%, black);
+  }
+}
+
 .homeSection2 p {
   line-height: 50px;
-  width: 40vw;
+  width: 80vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .homeSection2 p {
+    position: absolute;
+    line-height: 1.5em;
+    width: 90vw;
+    left: -370px;
+  }
 }
 
 .homeSection2 .homeSectionButton2 {
@@ -362,6 +487,15 @@ p {
   margin-left: 55%;
 }
 
+@media (max-width: 768px) {
+  .homeSection2 .homeSectionButton2 {
+    left: -370px;
+    top: 250px;
+    font-size: 0.75em;
+    padding: 5px 40px;
+  }
+}
+
 .homeSection2 a {
   text-decoration: none;
 }
@@ -374,6 +508,12 @@ p {
   overflow: hidden;
   width: 30%;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  #slider {
+    width: 80vw;
+  }
 }
 
 #slider figure {
@@ -458,6 +598,12 @@ p {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  #slider2 {
+    width: 80vw;
+  }
+}
+
 #slider2 figure {
   position: relative;
   width: 300%;
@@ -540,10 +686,24 @@ p {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .class-title {
+    font-size: 1.5em;
+  }
+}
+
 .newsletter {
   display: -ms-grid;
   display: grid;
   padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .newsletter .newsletterImage {
@@ -555,12 +715,25 @@ p {
           mask-image: linear-gradient(to right, transparent 10%, #000000);
 }
 
+@media (max-width: 768px) {
+  .newsletter .newsletterImage {
+    height: 40vh;
+  }
+}
+
 .newsletter p {
   font-size: 36px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: absolute;
   margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .newsletter p {
+    font-size: 1em;
+    margin-left: 10%;
+  }
 }
 
 .newsletter form {
@@ -572,6 +745,12 @@ p {
   background-color: #6eb2cc;
   border-radius: 5px;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .newsletter form {
+    font-size: 2em;
+  }
 }
 
 .newsletter form input {
@@ -603,6 +782,14 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0;
+  }
 }
 
 footer section {
@@ -640,18 +827,43 @@ footer .foot2 a:hover:not(:first-child) {
   color: #ea6c36;
 }
 
-.testImage {
-  width: 100%;
-  height: 90vh;
-  margin-bottom: 40px;
+.testBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
-.testImage .testBannerText {
+.testBanner .testImage {
+  width: 100%;
+  height: auto;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+@media (max-width: 768px) {
+  .testBanner .testImage {
+    height: 40vh;
+    width: 90vw;
+  }
+}
+
+.testBanner .testBannerText {
   font-family: "Open Sans", sans-serif;
   position: absolute;
-  width: 350px;
+  width: 50vw;
   top: 25%;
   left: 10%;
+  font-size: 3em;
+}
+
+@media (max-width: 768px) {
+  .testBanner .testBannerText {
+    left: 10%;
+    font-size: 1.5em;
+    width: 70vw;
+  }
 }
 
 .testimonial1 {
@@ -919,7 +1131,7 @@ footer .foot2 a:hover:not(:first-child) {
     grid-auto-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    width: auto;
+    width: 100%;
   }
   body img {
     width: 100%;

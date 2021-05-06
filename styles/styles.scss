@@ -17,21 +17,14 @@ sans-serif;
 $light: 300;
 $heavy:700;
 
-// Media queries and SCSS mixins, used for mobile and tablet
+// Media queries and SCSS mixins, used for mobile
 // responsive design requirements
-$mobile: 414px;
-$tablet: 768px;
+$mobile: 768px;
 
 @mixin mobile {
-  @media (max-width: #{$mobile}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: #{tablet}) {
-    @content;
-  }
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
 }
 
 // Body Styles
@@ -44,6 +37,7 @@ body {
 
     @include mobile {
         margin: 0;
+        padding: 0;
     }
 }
 
@@ -63,12 +57,15 @@ header {
     @include mobile {
         flex-direction: row;
         padding: 10%;
-        justify-content: center;   
+        justify-content: left;
     }
 
     h2 {
         padding-left: 1%;
-        flex-grow: 1;
+
+        @include mobile() {
+            width: 25%;
+        }
     }
 
     // Navigation styling within the header
@@ -92,10 +89,14 @@ header {
                 padding-left: 16px;
             }
         }
+
         @include mobile {
-            flex-direction: row;
-            padding: 10%;
-            justify-content: center;   
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            justify-content: left;
+            font-size: 1em;
+            padding-left: 10%;
         }
     }
 }
@@ -150,6 +151,11 @@ p {
     .bannerImage {
         width: 100%;
         display: flex;
+
+        @include mobile() {
+            padding: 0;
+            width: 95vw;
+        }
     }
 
     h1 {
@@ -159,6 +165,11 @@ p {
         width: 350px;
         top: 10%;
         left: 10%;
+
+        @include mobile() {
+            font-size: 1em;
+            top: 2%;
+        }
     }
 
     .bannerEmail {
@@ -168,6 +179,10 @@ p {
         width: 350px;
         top: 50%;
         left: 10%;
+
+        @include mobile() {
+            top: 30%;
+        }
 
         a {
             text-decoration: none;
@@ -182,6 +197,10 @@ p {
         width: 350px;
         top: 60%;
         left: 10%;
+
+        @include mobile() {
+            top: 40%;
+        }
     }
 
     .bannerButton {
@@ -197,6 +216,11 @@ p {
         border-radius: 10px;
         font-size: 18px;
         font-weight: 700;
+
+        @include mobile() {
+            font-size: 1em;
+            padding: 10px 50px;
+        }
     }
 }
 
@@ -249,6 +273,12 @@ p {
     font-family: $OpenSans;
     font-weight: $heavy;
     text-align: center;
+
+    @include mobile() {
+        display: inline-block;
+        text-align: left;
+        padding-left: 5%;
+    }
 }
 
 .dropcap:first-letter {
@@ -259,6 +289,16 @@ p {
     line-height: 0.55;
     margin-top: 18px;
     margin-right: 6px;
+
+    @include mobile() {
+        font-size: 3rem;
+    }
+}
+
+.dropcap {
+    @include mobile() {
+        width: 80vw;
+    }
 }
 
 // Fade in classes to allow text animation using class changing, 
@@ -294,11 +334,18 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    @include mobile() {
+        display: flex;
+    }
+
     .homeImage1 {
         height: 60vh;
         mask-image: linear-gradient(to left, transparent 10%, black);
-        // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        // filter: grayscale(100%);
+
+        @include mobile() {
+            height: 40vh;
+            mask-image: linear-gradient(to left, transparent 20%, black);
+        }
     }
 
     p {
@@ -308,6 +355,12 @@ p {
         font-weight: $light;
         position: absolute;
 
+        @include mobile() {
+            position: absolute;
+            line-height: 1.5em;
+            width: 90vw;
+            left: -370px;
+        }
     }
 
     .homeSectionButton1 {
@@ -321,6 +374,13 @@ p {
         position: absolute;
         margin-top: 60%;
         margin-left: 55%;
+
+        @include mobile() {
+            left: -370px;
+            top: 300px;
+            font-size: 0.75em;
+            padding: 5px 40px;
+        }
     }
 
     a {
@@ -338,18 +398,34 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+    @include mobile() {
+        display: flex;
+    }
+
     .homeImage2 {
         margin-right: 0;
         height: 60vh;
         mask-image: linear-gradient(to left, transparent 5%, black);
+
+        @include mobile() {
+            height: 40vh;
+            mask-image: linear-gradient(to left, transparent 30%, black);
+        }
     }
 
     p {
         line-height: 50px;
-        width: 40vw;
+        width: 80vw;
         font-family: $OpenSans;
         font-weight: $light;
         position: absolute;
+
+        @include mobile() {
+            position: absolute;
+            line-height: 1.5em;
+            width: 90vw;
+            left: -370px;
+        }
     }
 
     .homeSectionButton2 {
@@ -363,6 +439,13 @@ p {
         position: absolute;
         margin-top: 60%;
         margin-left: 55%;
+
+        @include mobile() {
+            left: -370px;
+            top: 250px;
+            font-size: 0.75em;
+            padding: 5px 40px;
+        }
     }
 
     a {
@@ -380,6 +463,10 @@ p {
     overflow: hidden;
     width: 30%;
     margin: auto;
+
+    @include mobile() {
+        width: 80vw;
+    }
 }
 
 #slider figure {
@@ -441,6 +528,10 @@ p {
     overflow: hidden;
     width: 30%;
     margin: auto;
+
+    @include mobile() {
+        width: 80vw;
+    }
 }
 
 #slider2 figure {
@@ -503,6 +594,10 @@ p {
     font-size: 2em;
     padding-top: 50px;
     text-align: center;
+
+    @include mobile() {
+        font-size: 1.5em;
+    }
 }
 
 // Newsletter signup section
@@ -511,11 +606,18 @@ p {
     display: grid;
     padding-top: 50px;
 
+    @include mobile() {
+        display: flex;
+    }
+
     .newsletterImage {
         height: 70vh;
         width: 100%;
         mask-image: linear-gradient(to right, transparent 10%, $black);
 
+        @include mobile() {
+            height: 40vh;
+        }
     }
 
     p {
@@ -524,6 +626,11 @@ p {
         font-weight: $light;
         position: absolute;
         margin-top: 10%;
+
+        @include mobile() {
+            font-size: 1em;
+            margin-left: 10%;
+        }
     }
 
     form {
@@ -536,12 +643,16 @@ p {
         border-radius: 5px;
         padding: 20px;
 
+        @include mobile() {
+            font-size: 2em;
+        }
+
         input {
             font-size: .5em;
         }
-
-
     }
+
+    
 
     button {
         background: #6EB2CC;
@@ -571,6 +682,11 @@ footer {
     font-family: $OpenSans;
     font-weight: $light;
     text-align: left;
+
+    @include mobile() {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
 
     section {
         padding-top: 10px;
@@ -608,7 +724,7 @@ footer {
     // child so title of "Quick Links" does not change on hover
     // as is not a "link"
     .foot2 {
-        a:hover:not(:first-child)  {
+        a:hover:not(:first-child) {
             color: $orange;
         }
     }
@@ -617,19 +733,39 @@ footer {
 // Testimonials page specific styling
 
 // Testimonial page banner image and text styling
-.testImage {
-    width: 100%;
-    height: 90vh;
-    margin-bottom: 40px;
+
+.testBanner {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    .testImage {
+        width: 100%;
+        height: auto;
+        filter: brightness(40%);
+
+        @include mobile() {
+            height: 40vh;
+            width: 90vw;
+        }
+    }
 
     .testBannerText {
         font-family: $OpenSans;
         position: absolute;
-        width: 350px;
+        width: 50vw;
         top: 25%;
         left: 10%;
+        font-size: 3em;
+
+        @include mobile() {
+            left: 10%;
+            font-size: 1.5em;
+            width: 70vw;
+        }
     }
 }
+
 
 // Testimonial page styling to apply to each individual testimonial
 .testimonial1 {
@@ -901,7 +1037,7 @@ $mobile: 480px;
         display: grid;
         grid-auto-columns: 1fr;
         grid-template-rows: auto;
-        width: auto;
+        width: 100%;
 
         img {
             width: 100%;
