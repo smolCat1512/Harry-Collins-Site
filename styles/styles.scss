@@ -182,6 +182,7 @@ p {
 
         @include mobile() {
             top: 30%;
+            width: 80vw;
         }
 
         a {
@@ -818,6 +819,12 @@ footer {
     width: 100%;
     height: 90vh;
     mask-image: linear-gradient(90deg, transparent 10%, $black);
+
+    @include mobile() {
+        width: 100vw;
+        height: 50vh;
+        padding-bottom: 10vh;
+    }
 }
 
 
@@ -832,6 +839,10 @@ footer {
     .aboutImage1 {
         width: 100%;
         mask-image: linear-gradient(90deg, transparent 10%, $black);
+
+        @include mobile() {
+            mask-image: linear-gradient(90deg, transparent 40%, $black);
+        }
     }
 
     .aboutImage1text {
@@ -842,7 +853,17 @@ footer {
         font-size: 45px;
         width: 70%;
         transform: translate(-50%, -50%);
+
+        @include mobile() {
+            top: 40%;
+            font-size: 1em;
+            font-weight: 600;
+        }
     }
+}
+
+.aboutButton {
+    margin-top: 5%;
 }
 
 .about2 {
@@ -851,9 +872,17 @@ footer {
     flex-wrap: wrap;
     text-align: right;
 
+    @include mobile() {
+        padding-bottom: 25vh;
+    }
+
     .aboutImage2 {
         width: 100%;
         mask-image: linear-gradient(270deg, transparent 10%, $black);
+
+        @include mobile() {
+            height: 50vh;
+        }
     }
 
     .aboutImage2text1 {
@@ -862,6 +891,12 @@ footer {
         left: 60%;
         font-size: 40px;
         width: 40%;
+
+        @include mobile() {
+            font-size: 2em;
+            left: 1em;
+            text-align: start;
+        }
     }
 
     .aboutImage2text2 {
@@ -872,6 +907,15 @@ footer {
         font-size: 20px;
         width: 60%;
         line-height: 3;
+
+        @include mobile() {
+            margin-top: 3em;
+            text-align: left;
+            font-size: 1em;
+            line-height: normal;
+            width: 90vw;
+            left: 2em;
+        }
     }
 }
 
