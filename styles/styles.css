@@ -309,7 +309,7 @@ p {
 }
 
 .bannerPosttext::after {
-  content: "\201C";
+  content: "\201D";
   /* style the quote */
   color: #ea6c36;
   font-size: 3em;
