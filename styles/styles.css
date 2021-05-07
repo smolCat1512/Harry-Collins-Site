@@ -281,13 +281,45 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: center;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
   .bannerPosttext {
     display: inline-block;
-    text-align: left;
-    padding-left: 5%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+  }
+}
+
+.bannerPosttext::before {
+  content: "\201C";
+  /* style the quote */
+  color: #ea6c36;
+  font-size: 3em;
+  position: relative;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .bannerPosttext::before {
+    top: 10px;
+  }
+}
+
+.bannerPosttext::after {
+  content: "\201C";
+  /* style the quote */
+  color: #ea6c36;
+  font-size: 3em;
+  position: relative;
+  top: 50px;
+}
+
+@media (max-width: 768px) {
+  .bannerPosttext::after {
+    top: 30px;
   }
 }
 
